@@ -54,7 +54,7 @@ namespace Dijkstra.ConsoleRunner.Helpers
             {
                 result = input.Replace(" ", "")
                               .Split(',').ToList()
-                              .Select(x => int.Parse(x)).ToList();
+                              .Select(int.Parse).ToList();
             }
             catch (Exception ex)
             {

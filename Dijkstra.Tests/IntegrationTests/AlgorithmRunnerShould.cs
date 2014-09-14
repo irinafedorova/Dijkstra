@@ -14,7 +14,6 @@ namespace Dijkstra.Tests.IntegrationTests
         {
             var inputGraph = @"1 2,10 3,20".Replace(" ", "\t");
             var sourceVertexId = 1;
-            var destinationVerticesIds = new List<int> { 2, 4 };
 
             var algorithmRunner = new AlgorithmRunner();
 

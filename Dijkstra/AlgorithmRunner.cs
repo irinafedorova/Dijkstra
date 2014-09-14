@@ -7,9 +7,9 @@ namespace Dijkstra
 {
     public class AlgorithmRunner
     {
-        private IAlgorithm algorithm;
+        private readonly IAlgorithm algorithm;
 
-        private IGraphParser graphParser;
+        private readonly IGraphParser graphParser;
 
         public AlgorithmRunner()
         {

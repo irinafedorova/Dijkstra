@@ -28,17 +28,6 @@ namespace Dijkstra.Tests.UnitTests
         [TestMethod]
         public void DelegateToInputParserAndAlgorithm()
         {
-            var vertex1 = new Vertex(1);
-            var vertex2 = new Vertex(2);
-            var vertex3 = new Vertex(3);
-            var vertex4 = new Vertex(4);
-
-            var expected = new List<ShortestPath> 
-                    {
-                        new ShortestPath { From = vertex1, To = vertex2, Length = 3 },
-                        new ShortestPath { From = vertex1, To = vertex4, Length = 1 },
-                    };
-
             var graph = new List<Vertex> 
                     {
                         new Vertex(1),
@@ -54,7 +43,7 @@ namespace Dijkstra.Tests.UnitTests
 
             var inputGraph = "some input graph";
             var sourceVertexId = 1;
-            List<ShortestPath> actual = this.algorithmRunner.FindShortestPaths(
+            this.algorithmRunner.FindShortestPaths(
                 inputGraph,
                 sourceVertexId);
 

@@ -69,7 +69,7 @@ namespace Dijkstra
 
         private ShortestPath FindClosestHead(
             Vertex sourceVertex,
-            List<ShortestPath> processedPaths,
+            IEnumerable<ShortestPath> processedPaths,
             List<Vertex> unprocessedVerticies)
         {
             if (unprocessedVerticies.Count == 0)

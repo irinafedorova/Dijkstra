@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="UnitTests\AlgorithmRunnerShould.cs" />
     <Compile Include="UnitTests\AlgorithmShould.cs" />
-    <Compile Include="IntegrationTests\EndToEndTests.cs" />
+    <Compile Include="IntegrationTests\AlgorithmRunnerShould.cs" />
     <Compile Include="AssertionHelper.cs" />
     <Compile Include="UnitTests\InputParserShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
