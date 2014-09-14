@@ -13,7 +13,7 @@ namespace Dijkstra
         {
             var result = new List<Vertex>();
 
-            string[] lines = Regex.Split(input, Environment.NewLine);
+            string[] lines = Regex.Split(input, Environment.NewLine + "|\n");
             foreach (var line in lines)
             {
                 if (string.IsNullOrWhiteSpace(line))

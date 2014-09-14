@@ -11,7 +11,8 @@ namespace Dijkstra.ConsoleRunner.Helpers.Tests
         [TestMethod]
         public void GetFileContent()
         {
-            var expected = "file" + Environment.NewLine + "content";
+            var expected = @"file
+content";
             var path = @"..\..\input\test.txt";
             string actual = ArgumentsParser.GetFileContent(path);
             Assert.AreEqual(expected, actual);
