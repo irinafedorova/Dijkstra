@@ -7,7 +7,7 @@ using Dijkstra.Entities;
 namespace Dijkstra.Tests.UnitTests
 {
     [TestClass]
-    public class InputParserShould
+    public class GraphParserShould
     {
         private GraphParser graphParser;
 
